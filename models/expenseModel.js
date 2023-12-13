@@ -23,6 +23,10 @@ const expenseSchema = new mongoose.Schema({
     default: 0,
   },
   createdAt: {
+    type: Date,
+    default: new Date(),
+  },
+  createdDate: {
     type: String,
   },
 });
@@ -34,7 +38,7 @@ expenseSchema.pre("save", function (next) {
   next();
 });
 expenseSchema.pre("save", function (next) {
-  this.createdAt = new Date().toISOString().split("T")[0];
+  this.createdDate = new Date().toISOString().split("T")[0];
   next();
 });
 const Expense = mongoose.model("Expense", expenseSchema);

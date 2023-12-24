@@ -1,0 +1,3 @@
+Simple API for testing data withput Authorization and Authentication.
+Under development project for Military Expenses for ITBP Force.
+Node.js, Express, MongoDB, Pug, HTML, CSS, JavaScript and dependencies....
